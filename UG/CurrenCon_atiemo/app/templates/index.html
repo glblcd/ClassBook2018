@@ -10,11 +10,13 @@
 			<div class="form-group">
 			<label for="exampleFormControlSelect1">Currency</label>
 			<br>
+			 
 			<select class="form-control" name="currency">
-			  <option value="USD">US Dollars</option>
-			  <option value="GBP">British Pounds</option>
-			  <option value="EUR">Euros</option>
+				 {% for x in list_of_currencies %}
+				<option>{{x}}</option>
+				 {% endfor %}
 			</select>
+
 			</div>
 			<br>
 			<br>		  

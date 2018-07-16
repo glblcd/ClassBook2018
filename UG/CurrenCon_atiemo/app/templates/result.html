@@ -1,24 +1,22 @@
-{% extends "layout.html" %}
-{% block content %}
+{% extends "layout.html" %} {% block content %}
 <style>
-.card {
-        margin: 0 auto; /* Added */
-        float: none; /* Added */
-        margin-bottom: 10px; /* Added */
-}
+	.card {
+		margin: 0 auto;
+		/* Added */
+		float: none;
+		/* Added */
+		margin-bottom: 10px;
+		/* Added */
+	}
 </style>
 <div class="container">
-	<div class="container-fluid text-center"> 
+	<div class="container-fluid text-center">
 		<div class="card card-5-7 card-default">
-		  <div class="card-body">
-			<h4>Converted Value</h4>
-			  <p class="card-text">That will be {{ fresult }} {{ denom}} </p>
-		  </div>
-		</div>    
+			<div class="card-body">
+				<h4>Converted Value</h4>
+				<p class="card-text">That will be {{ fresult }} {{ currency_name}} </p>
+			</div>
+		</div>
 	</div>
-</div><br>
-{% endblock %}
-
-
-
-  
+</div>
+<br> {% endblock %}
